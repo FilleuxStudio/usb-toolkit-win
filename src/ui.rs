@@ -48,9 +48,9 @@ fn choose_drive() -> Option<char> {
 pub fn run() {
     unsafe { SetConsoleOutputCP(65001) };
     loop {
-        println!("\n╔════════════════════════════════════════════╗");
-        println!("║        USB TOOLKIT — gestion de clés USB   ║");
-        println!("╚════════════════════════════════════════════╝");
+        println!("\n╔════════════════════════════════════════════════╗");
+        println!("║        USB TOOLKIT WIN — gestion de clés USB   ║");
+        println!("╚════════════════════════════════════════════════╝");
         if unsafe { IsUserAnAdmin() } == 0 {
             println!("⚠  Pas en administrateur : la plupart des actions échoueront.");
         }
